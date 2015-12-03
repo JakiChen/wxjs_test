@@ -8,7 +8,6 @@ $(document).ready(function(e) {
 		$(".button-swap").toggleClass("button-swap-on");
 	});
 });
-
 function WeiXinAddContact(name){
 	WeixinJSBridge.invoke("addContact", {webtype: "1",username: name}, function(e) {
 		WeixinJSBridge.log(e.err_msg);
@@ -21,5 +20,19 @@ function WeiXinAddContact(name){
 	})
 }
 wx.ready(function () {
-	alert("WeChat JS SDK")
+	// 1 判断当前版本是否支持指定 JS 接口，支持批量判断
+	document.querySelector('#icon-cart').onclick = function () {
+		wx.checkJsApi({
+			jsApiList: [
+			'getNetworkType',
+			'previewImage'
+			],
+			success: function (res) {
+			alert(JSON.stringify(res));
+		}
+		});
+	};
+});
+wx.error(function (res) {
+  alert(res.errMsg);
 });
