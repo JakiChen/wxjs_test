@@ -33,7 +33,9 @@ wx.ready(function () {
 		wx.checkJsApi({
 			jsApiList: [
 			'getNetworkType',
-			'previewImage'
+			'previewImage',
+			'chooseWXPay',
+			'addContact'
 			],
 			success: function (res) {
 			alert(JSON.stringify(res));
