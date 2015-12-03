@@ -29,7 +29,7 @@ wx.config({
 });
 wx.ready(function () {
 	// 1 判断当前版本是否支持指定 JS 接口，支持批量判断
-	document.querySelector('#icon-cart').onclick = function () {
+	document.querySelector('#wx-js-test').onclick = function () {
 		wx.checkJsApi({
 			jsApiList: [
 			'getNetworkType',
