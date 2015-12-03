@@ -311,7 +311,7 @@ ul,li{
 .on .menu-icon-wechat,
 .on .menu-icon-jd,
 .on .menu-icon-follow{
-	width:100%;
+	width:100px;
 }
 .on .menu-icon-wechat:before{
 	content:"微信支付";
