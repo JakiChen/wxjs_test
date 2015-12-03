@@ -20,3 +20,6 @@ function WeiXinAddContact(name){
 		}
 	})
 }
+wx.ready(function () {
+	alert("WeChat JS SDK")
+});
