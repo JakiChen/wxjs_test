@@ -25,7 +25,7 @@ wx.config({
     timestamp: 5, // 必填，生成签名的时间戳
     nonceStr: 'jhukbx', // 必填，生成签名的随机串
     signature: '',// 必填，签名，见附录1
-    jsApiList: [chooseWXPay] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+    jsApiList: ['chooseWXPay','getNetworkType','previewImage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
 });
 wx.ready(function () {
 	// 1 判断当前版本是否支持指定 JS 接口，支持批量判断
