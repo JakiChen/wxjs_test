@@ -24,7 +24,7 @@ wx.config({
     appId: 'wx7109fa9354031087', // 必填，公众号的唯一标识
     timestamp: 1422946870, // 必填，生成签名的时间戳
     nonceStr: 'jhukbx', // 必填，生成签名的随机串
-    signature: 'bf7a5555f9ad0e7e491535f232349a40510a6f8f',// 必填，签名，见附录1
+    signature: '8ec0006bd488d5ef527b0c0cd618c3d8ee2c3897',// 必填，签名，见附录1
     jsApiList: ['chooseWXPay','getNetworkType','previewImage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
 });
 wx.ready(function () {
