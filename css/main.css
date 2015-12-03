@@ -180,6 +180,8 @@ ul,li{
 .button-swap{
 	height:29px;
 	width:58px;
+	display:block;
+	text-decoration:none;
 	position:absolute;
 	left:50%;
 	bottom:10px;
@@ -187,15 +189,19 @@ ul,li{
 	z-index:1000;
 	text-align:center;
 }
-.button-swap:before{
-	content:"点击切换";
+.button-swap-on{
+	z-index:1200;
+}
+.button-swap a{
 	background-color:#fff;
 	display:block;
 	vertical-align:middle;
 	margin-top:5px;
 	line-height:18px;
 	color:#b7b7b7;
-	font-size:13px;
+	font-size:1.3rem;
+	text-decoration:none;
+	cursor:pointer;
 }
 .menu{
 	height:100%;
@@ -238,7 +244,7 @@ ul,li{
 .menu .menu-icon-follow{
 	bottom:15px;
 	z-index:1500;
-	width:10000px;
+	width:0%;
 	text-align:left;
 }
 @-webkit-keyframes followAnimation {
@@ -275,7 +281,7 @@ ul,li{
 @-webkit-keyframes wechatTextAnimation {
   from 
   	{
-		right:3000px;;
+		right:3000px;
 	}
   to 
   	{
@@ -312,10 +318,10 @@ ul,li{
 	height:44px;
 	line-height:44px;
 	position:absolute;
-	right:0px;
-	top:0px;
 	-webkit-animation-name: wechatTextAnimation;
 	-webkit-animation-duration: 500ms;
+	right:0px;
+	top:0px;
 }
 .on .menu-icon-jd:before{
 	content:"寄送到家";
@@ -341,8 +347,6 @@ ul,li{
 	bottom:64px;
 	-webkit-animation-name: followAnimation;
 	-webkit-animation-duration: 500ms;
-	/*-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;*/
 }
 .on .menu-icon-bear{
 	font-size:0;
@@ -352,15 +356,11 @@ ul,li{
 	bottom:113px;
 	-webkit-animation-name: jdAnimation;
 	-webkit-animation-duration: 500ms;
-	/*-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;*/
 }
 .on .menu-icon-wechat{
 	bottom:162px;
 	-webkit-animation-name: wechatAnimation;
 	-webkit-animation-duration: 500ms;
-	/*-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;*/
 }
 .menu-icon-bear{
 	bottom:56px;
