@@ -22,9 +22,9 @@ function WeiXinAddContact(name){
 wx.config({
     debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
     appId: 'wx7109fa9354031087', // 必填，公众号的唯一标识
-    timestamp: 1422946870, // 必填，生成签名的时间戳
-    nonceStr: 'jhukbx', // 必填，生成签名的随机串
-    signature: '8ec0006bd488d5ef527b0c0cd618c3d8ee2c3897',// 必填，签名，见附录1
+    timestamp: 1449199026, // 必填，生成签名的时间戳
+    nonceStr: 'EK9y23pNp5Fo1jG7', // 必填，生成签名的随机串
+    signature: '9580a66040a2281e43ce8e751fab4069f85dd8ec',// 必填，签名，见附录1
     jsApiList: ['chooseWXPay','getNetworkType','previewImage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
 });
 wx.ready(function () {
@@ -34,8 +34,7 @@ wx.ready(function () {
 			jsApiList: [
 			'getNetworkType',
 			'previewImage',
-			'chooseWXPay',
-			'addContact'
+			'chooseWXPay'
 			],
 			success: function (res) {
 			alert(JSON.stringify(res));
